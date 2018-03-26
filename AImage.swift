@@ -79,6 +79,9 @@ public class AImageView: UIView {
         return Int(image.size.height * image.size.width * 4) * imageCount / (1000 * 1000)
     }
     
+    public func restart(){
+        self.indexAt = 0
+    }
     private func clear(){
         self.indexAt = 0
         self.cache.removeAllObjects()
